@@ -34,10 +34,13 @@ def ask_codex(prompt, key):
         {"role": "system", "content": protocol_memory},
         {"role": "user", "content": prompt}
     ]
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=messages,
-        api_key=key
+    client = openai.OpenAI(api_key=key)
+
+response = client.chat.completions.create(
+    model="gpt-4",
+    messages=messages
+)
+
     )
     return response.choices[0].message.content
 
