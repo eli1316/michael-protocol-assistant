@@ -1,5 +1,3 @@
-!pip install --upgrade openai --quiet --pre
-
 import openai
 import datetime
 
@@ -59,3 +57,6 @@ ledger_entry = f"\n\n=== Michael Protocol Ledger Entry ===\nTime: {timestamp}\n\
 
 with open("Michael_Protocol_Ledger.txt", "a") as file:
     file.write(ledger_entry)
+
+
+
