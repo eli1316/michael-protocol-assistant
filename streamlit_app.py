@@ -54,4 +54,3 @@ if st.button("Run Protocol"):
                 st.markdown(f"**🛡️ Codex Response:**\n\n{output}")
             except Exception as e:
                 st.error(f"Error: {str(e)}")
-
