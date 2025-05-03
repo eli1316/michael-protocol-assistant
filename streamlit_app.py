@@ -41,7 +41,7 @@ response = client.chat.completions.create(
     messages=messages
 )
 
-    )
+)
     return response.choices[0].message.content
 
 # ACTION
